@@ -36,6 +36,7 @@ a:hover {
   top: 10px;
   left: 10px;
   color: #ffffff;
+  z-index: 100;
 }
 .container {
   position: relative;
