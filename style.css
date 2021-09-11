@@ -2,6 +2,21 @@
   width: device-width;
 }
 
+@media screen and (max-width: 700px) {
+  .top-photo {
+    width: 100vw;
+    transform: translate(-50%, -50%);
+  }
+  .bot-photo {
+    width: 100vw;
+    transform: translate(50%, 50%);
+  }
+
+  .card {
+    width: 300px;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
@@ -11,18 +26,16 @@ body {
 .top-photo {
   pointer-events: none;
   position: fixed;
-  width: 100vw;
   top: 0;
   left: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -70%);
 }
 .bot-photo {
   pointer-events: none;
   position: fixed;
-  width: 100vw;
   bottom: 0;
   right: 0;
-  transform: translate(50%, 50%);
+  transform: translate(30%, 70%);
 }
 a {
   text-decoration: none;
@@ -109,7 +122,8 @@ a:hover {
   padding-top: 7px;
 }
 .stats-child {
-  margin: 30px;
+  padding-top: 5px;
+  margin: 20px 30px;
   display: flex;
   flex-direction: column;
   align-content: center;
